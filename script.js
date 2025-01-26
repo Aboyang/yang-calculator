@@ -70,6 +70,8 @@ class Calculator {
             this.operand = '0'
             this.prevOperand = null
             this.operatorBuffer = null
+            this.secondOperand = false
+            this.equate = false
         } else if (key == 'DEL') {
             this.operand = this.operand.slice(0, this.operand.length - 1)
             if (this.operand == '') {

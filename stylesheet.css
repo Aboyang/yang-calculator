@@ -1,0 +1,189 @@
+body {
+  
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.button {
+    box-sizing: border-box;
+    border: 3px solid white
+}
+
+.back-image {
+    position: absolute;
+    z-index: 0;
+    background-image: url(assets/pond-rain.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+
+    filter: blur(6px)
+    
+}
+
+.calculator {
+    position: absolute;
+    z-index: 2;
+
+
+
+    cursor: pointer;
+    
+    height: auto;
+    width: auto;
+
+    box-shadow: 0 0 15px 10px #ccc;
+    /* background-image: linear-gradient(to left bottom, rgb(210, 242, 196), rgb(135, 178, 129)); */
+
+    display: grid;
+    grid-template-columns: repeat(4, 68.75px);
+
+    box-sizing: border-box;
+    padding: 25px;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+.calculator .display {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+
+    background-color: transparent;
+    grid-column: span 4;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    height: 206.25px;
+
+}
+
+.calculator .toggle-button {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    background-color: #abcf84;
+    color: black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 68.75px;
+    border-radius: 100px;
+
+}
+
+.calculator .toggle-button:hover {
+    background-color: #cffaa1 ;
+}
+
+.calculator .toggle-button:active {
+    background-color: #606752 ;
+}
+
+.calculator .operator-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    background-color:#85A98F;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 68.75px;
+    border-radius: 100px;
+
+}
+
+.calculator .operator-button:hover {
+    background-color: #a0cbac ;
+}
+
+.calculator .operator-button:active {
+    background-color: #606752 ;
+}
+
+.calculator .equal-button {
+    grid-column: span 2;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    background-color: #85A98F;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 68.75px;
+    border-radius: 100px;
+}
+
+.calculator .equal-button:hover {
+    background-color: #a0cbac ;
+}
+
+.calculator .equal-button:active {
+    background-color: #606752 ;
+}
+
+.calculator .number-button {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    background-color: #bdca9f;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 68.75px;
+    border-radius: 100px;
+
+    transition: 0.2s;
+}
+
+.calculator .number-button:hover {
+    background-color: #d8e7ba ;
+}
+
+.calculator .number-button:active {
+    background-color: #606752 ;
+}
+
+.calculator .clear-button {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    background-color: #abcf84;
+    color: black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 68.75px;
+    border-radius: 100px;
+
+}
+
+.calculator .clear-button:hover {
+    background-color: #cffaa1 ;
+}
+
+.calculator .clear-button:active {
+    background-color: #606752 ;
+}

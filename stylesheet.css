@@ -20,14 +20,14 @@ body {
 .back-image {
     position: absolute;
     z-index: 0;
-    background-image: url(assets/pond-rain.gif);
+    background-image: url(assets/coinbag.gif);
     background-repeat: no-repeat;
     background-size: cover;
 
     height: 100%;
     width: 100%;
 
-    filter: blur(6px)
+    filter: blur(0px)
     
 }
 

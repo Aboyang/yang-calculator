@@ -59,9 +59,9 @@ class Calculator {
     display(displayScreen) {
         if (this.operand.length > 7) {
             console.log('exp')
-            displayScreen.innerHTML = (Number(this.operand).toExponential(2)).toString()
+            displayScreen.children[1].innerHTML = (Number(this.operand).toExponential(2)).toString()
         } else {
-            displayScreen.innerHTML = this.operand
+            displayScreen.children[1].innerHTML = this.operand
         }
     }
 
